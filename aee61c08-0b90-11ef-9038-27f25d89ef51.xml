@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!DOCTYPE records [
+  <!ELEMENT records (record*)>
+  <!ELEMENT record (language,description,grades)>
+  
+  <!ELEMENT language (#PCDATA)>
+  <!ELEMENT description (#PCDATA)>
+  
+  <!ELEMENT grades (result+)>
+  <!ELEMENT result (#PCDATA)>
+
+  <!ATTLIST record id ID #REQUIRED>
+  <!ATTLIST record type (fulltime|parttime) "fulltime">
+  <!ATTLIST result level (A | B | C) "A">
+]>
+
+<records>
+  <record id="s1">
+    <language>English</language>
+    <description>This record is graded to A if one has shown a proficiency in English</description>
+    <grades>
+      <result level="A">FAILED</result>
+      <result level ="B">PASS</result>
+      <result level="C">PASS</result>
+    </grades>
+  </record>
+
+  <record id="s2">
+    <language>German</language>
+    <description>This record is graded to A if one has shown a proficiency in German</description>
+    <grades>
+      <result level="A">FAILED</result>
+      <result level ="B">FAILED</result>
+      <result level="C">PASS</result>
+    </grades>
+  </record>
+
+  <record id="s3">
+    <language>Spanish</language>
+    <description>This record is graded to A if one has shown a proficiency in Spanish</description>
+    <grades>
+      <result level="A">PASS</result>
+      <result level ="B">PASS</result>
+      <result level="C">PASS</result>
+    </grades>
+  </record>
+
+  <record id="s4">
+    <language>Japanese</language>
+    <description>This record is graded to A if one has shown a proficiency in Japanese</description>
+    <grades>
+      <result level="A">PASS</result>
+      <result level ="B">PASS</result>
+      <result level="C">PASS</result>
+    </grades>
+  </record>
+
+  <record id="s5">
+    <language>Italian</language>
+    <description>This record is graded to A if one has shown a proficiency in Italian</description>
+    <grades>
+      <result level="A">PASS</result>
+      <result level ="B">PASS</result>
+      <result level="C">PASS</result>
+    </grades>
+  </record>
+
+  <record id="s6" type="parttime">
+    <language>Korean</language>
+    <description>This record is graded to A if one has shown a proficiency in Korean</description>
+    <grades>
+      <result level="A">PASS</result>
+      <result level ="B">PASS</result>
+      <result level="C">PASS</result>
+    </grades>
+  </record>
+
+  <record id="s7" type="parttime">
+    <language>Swahili</language>
+    <description>This record is graded to A if one has shown a proficiency in Swahili</description>
+    <grades>
+      <result level="A">PASS</result>
+      <result level ="B">PASS</result>
+      <result level="C">PASS</result>
+    </grades>
+  </record>
+
+  <record id="s8" type="fulltime">
+    <language>Arabic</language>
+    <description>This record is graded to A if one has shown a proficiency in Arabic</description>
+    <grades>
+      <result level="A">FAILED</result>
+      <result level ="B">FAILED</result>
+      <result level="C">PASS</result>
+    </grades>
+  </record>
+
+  <record id="s9" type="parttime">
+    <language>French</language>
+    <description>This record is graded to A if one has shown a proficiency in French</description>
+    <grades>
+      <result level="A">PASS</result>
+      <result level ="B">PASS</result>
+      <result level="C">PASS</result>
+    </grades>
+  </record>
+  
+  <record id="s10" type="parttime"> 
+    <language>Finnish</language>
+    <description>This record is graded to A if one has shown a proficiency in Finnish</description>
+    <grades>
+      <result level="A">PASS</result>
+      <result level ="B">PASS</result>
+      <result level="C">PASS</result>
+    </grades>
+  </record>
+
+  <record id="s11" type="parttime">
+    <language>Portuguese</language>
+    <description>This record is graded to A if one has shown a proficiency in Portuguese</description>
+    <grades>
+      <result level="A">PASS</result>
+      <result level ="B">PASS</result>
+      <result level="C">PASS</result>
+    </grades>
+  </record>
+
+  <record id="s12" type="parttime">
+    <language>Latin</language>
+    <description>This record is graded to A if one has shown a proficiency in Latin</description>
+    <grades>
+      <result level="A">PASS</result>
+      <result level ="B">PASS</result>
+      <result level="C">PASS</result>
+    </grades>
+  </record>
+  
+  
+</records>
